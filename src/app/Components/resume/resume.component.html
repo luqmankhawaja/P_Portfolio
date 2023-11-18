@@ -1,0 +1,156 @@
+<div class="container text-center">
+  <button class="btn btn-primary mb-5 shadow border" (click)="downloadPdf()">
+    Download PDF
+  </button>
+  <div class="pb-2">
+    <accordion [isAnimated]="true" class="shadow">
+      <accordion-group [(isOpen)]="isSummaryOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+            <div style="visibility: hidden;">></div>
+            <div class="btn-link">Summary</div>
+            <div style="width: 10.95px;">
+                <div *ngIf="!isSummaryOpen" style="color: white;">&gt;</div>
+                <div *ngIf="isSummaryOpen" style="color: white;">v</div>
+            </div>
+          </button>    
+        <div style="text-align: center">
+          <p>
+            Skilled Front-end developer, adept in delivering top-notch web apps
+            with a keen eye for user experience, ensuring timely, cost-effective
+            solutions both solo and in teams.
+          </p>
+        </div>
+      </accordion-group>
+      <accordion-group [(isOpen)]="isExperienceOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden;">></div>
+          <div class="btn-link">Experience</div>
+          <div style="width: 10.95px;">
+              <div *ngIf="!isExperienceOpen" style="color: white;">&gt;</div>
+              <div *ngIf="isExperienceOpen" style="color: white;">v</div>
+          </div>
+        </button>    
+        <div style="text-align: left">
+          <h2 class="mb-0">Software Engineer</h2>
+          <h3 class="text-primary">MFSYS Technologies</h3>
+          <ul>
+            <li>
+              <b>Project Management-</b>Enhanced app security by integrating
+              Firebase Auth using Angular, TypeScript, and Bootstrap for
+              user-friendly access.
+            </li>
+            <li>
+              <b>Configuration Monitoring-</b>Developed a robust database
+              monitoring interface with Angular and TypeScript, ensuring seamless
+              data integrity and performance aligned with backend services,
+              complete with real-time tracking for enhanced reliability.
+            </li>
+            <li>
+              <b>Backup Utility-</b>Designed and implemented a comprehensive
+              backup utility, empowering users to safeguard their data
+              effectively.
+            </li>
+            <li>
+              <b>Release Management-</b>Managed end-to-end release processes for
+              software projects, overseeing planning, coordination, and
+              execution.Successfully implemented version control strategies and
+              deployment pipelines, resulting in efficient and error-free software
+              releases.
+            </li>
+          </ul>
+        </div>
+        <div style="text-align: left">
+          <h2 class="mb-0">Web Developer</h2>
+          <h3 class="text-primary">OrigionSol Pvt Ltd</h3>
+          <ul>
+            <li>
+              As a <b>web developer</b> at <b>OrigionSol</b>, I specialized in
+              building static websites. Notable projects included websites for
+              <b>Whales Leadium</b> (a billing company) and
+              <b>Al-Hanabi Flavours</b>
+              (a restaurant). My work involved using HTML, CSS, Bootstrap, and
+              JavaScript to create visually appealing, responsive websites that
+              effectively conveyed each client's brand and services
+            </li>
+          </ul>
+        </div>
+      </accordion-group>
+      <accordion-group heading="Education">
+        <div style="text-align: left">
+          <h2 class="mb-0">Bachelor's of Science in Computer Science</h2>
+          <h3 class="text-primary">
+            International Islamic University, Islamabad (IIUI)
+          </h3>
+          <ul>
+            <li>Graduated from IIUI in January 2023</li>
+            <li>
+              I actively engaged in both semester projects , reports and my
+              culminating Final-Year-Project, demonstrating a dedicated commitment
+              to academic pursuits.
+  
+              <ul>
+                <li>Trackable Delivery of Grocery (FYP)</li>
+                <li>Shop Management System</li>
+                <li>
+                  Research Report on Social Media Marketing & Search Engine
+                  Optimization
+                </li>
+                <li>Research Report on Introduction to Software Engineering</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </accordion-group>
+      <accordion-group heading="Skills">
+        <div class="row" style="text-align: left">
+          <div class="col">
+            <ul>
+              <li>Web Development</li>
+              <li>Angular</li>
+              <li>React</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Github</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Bootstrap4</li>
+            </ul>
+          </div>
+        </div>
+      </accordion-group>
+      <accordion-group heading="Interests">
+        <div class="row" style="text-align: left">
+          <div class="col">
+            <ul>
+              <li>Full Stack Development</li>
+              <li>Backend Development</li>
+              <li>Serverless Integration</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li>Cloud Computing</li>
+              <li>DevOps</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li>User Experience (UX) Design</li>
+              <li>Web Accessibility</li>
+              <li>Open Source Contribution</li>
+            </ul>
+          </div>
+        </div>
+      </accordion-group>
+    </accordion>
+  </div>
+</div>

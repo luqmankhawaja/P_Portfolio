@@ -1,0 +1,22 @@
+.jumbotron{
+  padding: 2rem 1rem;
+  background-color:aliceblue;
+}
+.social-media-buttons {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.social-media-buttons a{
+  
+  color:#007bff
+}
+
+.social-media-buttons a:hover {
+  opacity: 0.8;
+}

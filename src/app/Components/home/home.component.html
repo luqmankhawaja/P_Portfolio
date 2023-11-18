@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg shadow border m-1">
+      <div class="text-center">
+        <h2>About Me</h2>
+        <img src="../assets/profile.jpg" width="256" height="256" class="rounded-circle">
+        <p>Hello! I'm Luqman, a frontend (Angular) developer, and a guy slighty obsessed for code quality.I’m currently working as a Software Engineer <b>@MFSYS Technologies</b> and also available for freelance work. If you have a project that you want to get started or think you need my help with something, then get in touch.</p>
+      </div>
+    </div>
+    <div class="col-lg shadow border m-1">
+      <div class="text-center">
+        <h2>Featured Projects</h2>
+        <h4>{{featuredProjects.name}}</h4>
+      </div>
+      <carousel>
+        <div *ngFor="let picture of featuredProjects.pictures">
+          <slide> <img src="{{ picture }}" alt="slide" style="display: block; width: 100%;"></slide>
+        </div>
+      </carousel>
+      <p class="mt-2">{{featuredProjects.summary}}</p>
+      <p>Visit the Portfolio Section to learn More </p>
+    </div>
+  </div>
+</div>
